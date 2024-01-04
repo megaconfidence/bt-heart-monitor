@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="ui">0</div>
-    <button id="connect">connect</button>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
+    <button class="connect">connect</button>
+    <div class="error hide">
+      ⚠️ This browser does not support the Web Bluetooth API
+    </div>
+    <div class="ui hide">
+      <div class="heart">
+        <img src="heart.png" />
+        <audio src="heartbeat.mp3" loop></audio>
+        <div class="bpm">--</div>
+      </div>
+      <button class="start">start</button>
+      <button class="stop">stop</button>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
