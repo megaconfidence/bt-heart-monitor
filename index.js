@@ -6,6 +6,7 @@ const startBTN = document.querySelector(".start");
 const errorTxt = document.querySelector(".error");
 const beatAudio = document.querySelector("audio");
 const connectBTN = document.querySelector(".connect");
+const connectUI = document.querySelector(".connect-ui");
 
 let device;
 let heartRate;
@@ -63,7 +64,7 @@ async function init() {
   await connectDevice();
 
   appUI.classList.remove("hide");
-  connectBTN.classList.add("hide");
+  connectUI.classList.add("hide");
   await startMonitoring();
 }
 

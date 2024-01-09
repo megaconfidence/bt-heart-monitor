@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button class="connect">connect</button>
-    <div class="error hide">
-      ⚠️ This browser does not support the Web Bluetooth API. Please try a
-      different browser
+    <div class="connect-ui">
+      <button class="connect">connect</button>
+      <div>
+        No heart monitor device?
+        <a
+          href="https://github.com/megaconfidence/bt-heart-monitor#set-up-a-heart-monitor-emulator"
+          target="_blank"
+          >Set up an emulator</a
+        >
+      </div>
+      <div class="error hide">
+        ⚠️ This browser does not support the Web Bluetooth API. Please try a
+        different browser
+      </div>
     </div>
     <div class="ui hide">
       <div class="heart">

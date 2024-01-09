@@ -59,6 +59,10 @@ button {
   border-radius: 1vh;
 }
 
+.error {
+  margin-top: 10px;
+}
+
 @keyframes heartbeat {
   0% {
     transform: scale(0.75);
